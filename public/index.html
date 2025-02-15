@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videopalvelu</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Videopalvelu</h1>
+
+    <!-- Käyttäjän nimen vaihto -->
+    <label for="newUsername">Vaihda käyttäjänimi:</label>
+    <input type="text" id="newUsername">
+    <button onclick="changeUsername()">Vaihda</button>
+    
+    <hr>
+
+    <!-- Videon lataus -->
+    <input type="text" id="videoTitle" placeholder="Videon nimi">
+    <input type="file" id="videoFile">
+    <button onclick="uploadVideo()">Julkaise video</button>
+
+    <hr>
+
+    <!-- Haku -->
+    <input type="text" id="searchQuery" placeholder="Etsi käyttäjä tai video">
+    <button onclick="search()">Hae</button>
+
+    <hr>
+
+    <!-- Videot -->
+    <h2>Kaikki videot</h2>
+    <div id="videoList"></div>
+</body>
+</html>
